@@ -1,0 +1,44 @@
+table
+{
+	border-collapse: collapse;
+	width: 100%;
+	height: 100%;
+}
+td, th
+{
+        position: relative;
+	border: 1px solid black;
+	text-align: center;
+}
+h1
+{
+        font-size: 2vh;
+}
+p
+{
+        font-size: 1.2vh;
+}
+.void
+{
+	border: none;
+}
+.poids
+{
+	text-align: right;
+	font-size: 1vh;
+}
+.num
+{
+	text-align: left;
+	font-size: 1vh;
+}
+.green{background-color: #66ff33;}
+.blue{background-color: #33ccff;}
+.red{background-color: #cc0000;}
+.beige{background-color: #ffcc99;}
+.metal{background-color: #669900;}
+.yellow{background-color: #ffff99;}
+.pink{background-color: #ffcccc;}
+.grey{background-color: #808080;}
+.purple{background-color: #9933ff;}
+.red2{background-color: #ff0066;}

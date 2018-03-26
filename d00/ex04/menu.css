@@ -1,0 +1,107 @@
+body
+{
+	font-family: 'Libre Baskerville', serif;
+	margin: 0px;
+	width: 100%;
+	padding: 0px;
+	color: white;
+}
+#nav
+{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+#nav li
+{
+	float: left;
+	position: relative;
+	list-style-type: none;
+}
+#nav li ul
+{
+	display: none;
+}
+#nav li a
+{
+	display: inline-block;
+	text-decoration: none;
+	padding: 20px 30px;
+}
+#nav > li > a
+{
+	color: white;
+	background-color: #424558;
+}
+#nav li:hover ul
+{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	margin-top: -5px;
+}
+.sous-menu li
+{
+	border-bottom: 1px solid #CCCCCC;
+}
+.sous-menu li a
+{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #225328;
+	width: 270px;
+}
+.horaires:hover
+{
+	border-top: 5px solid #e44d26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+.horaires:hover ul li:hover a
+{
+	color: #e44d26;
+}
+.faim:hover
+{
+	border-top: 5px solid #0070bb;
+	background-color: RGBa(000, 112, 192, 0.15);
+}
+.faim:hover ul li:hover a
+{
+	color: #0070bb;
+}
+.connexion:hover
+{
+	border-top: 5px solid #f1dc4f;
+	background-color: RGBa(241, 211, 79, 0.15);
+}
+.connexion:hover ul li:hover a
+{
+	color: #f1dc4f;
+}
+.contact:hover
+{
+	border-top: 5px solid #BBB;
+	background-color: RGBa(220, 220, 220, 0.15);
+}
+.contact:hover ul li:hover a
+{
+	color: #BBB;
+}
+.horaires .sous-menu
+{
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+.faim .sous-menu
+{
+	background-color: RGBa(000, 112, 192, 0.15);
+}
+.connexion .sous-menu
+{
+	background-color: RGBa(241, 211, 79, 0.15);
+}
+.contact .sous-menu
+{	
+	background-color: RGBa(220, 220, 220, 0.15);
+}
