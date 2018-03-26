@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tableau périodique</title>
+        <style>
+        	body
+        	{
+        		background-image: url("https://vignette.wikia.nocookie.net/starwars/images/2/2e/Porg.png/revision/20171216234505");
+        		background-repeat: no-repeat;
+        		background-position: center 110px;
+        	}
+        	table
+        	{
+        		border-collapse: collapse;
+        		width: 100%;
+        		height: 100%;
+        	}
+        	td
+        	{
+        		border: 1px solid black;
+        		text-align: center;
+        		width: 60px;
+        	}
+        	.void
+        	{
+        		border: none;
+        	}
+        	.poids
+        	{
+        		text-align: right;
+        		font-size: 0.8em;
+        	}
+        	.num
+        	{
+        		text-align: left;
+        		font-size: 0.8em;
+        	}
+        	.green{background-color: #66ff33;}
+        	.blue{background-color: #33ccff;}
+        	.red{background-color: #cc0000;}
+        	.beige{background-color: #ffcc99;}
+        	.metal{background-color: #669900;}
+        	.yellow{background-color: #ffff99;}
+        	.pink{background-color: #ffcccc;}
+        	.grey{background-color: #808080;}
+        	.purple{background-color: #9933ff;}
+        	.red2{background-color: #ff0066;}
+        </style>
+    </head>
+    <body>
+    	<table>
+    		<tr id="ligne1">
+    			<td class="green"><p class="poids">1,007975</p><h1>H</h1><p class="num">1</p></td>
+    			<td colspan="16" class="void"></td>
+    			<td class="blue"><p class="poids">2,002602</p><h1>He</h1><p class="num">2</p></td>
+    		</tr>
+    		<tr id="ligne2">
+    			<td class="red"><p class="poids">6,9395</p><h1>Li</h1><p class="num">3</p></td>
+    			<td class="beige"><p class="poids">9,0121831</p><h1>Be</h1><p class="num">4</p></td>
+    			<td colspan="10" class="void"></td>
+    			<td class="metal"><p class="poids">10,8135</p><h1>B</h1><p class="num">5</p></td>
+    			<td class="green"><p class="poids">12,0106</p><h1>C</h1><p class="num">6</p></td>
+    			<td class="green"><p class="poids">14,006855</p><h1>N</h1><p class="num">7</p></td>
+    			<td class="green"><p class="poids">15,99940</p><h1>O</h1><p class="num">8</p></td>
+    			<td class="yellow"><p class="poids">18,99840316</p><h1>F</h1><p class="num">9</p></td>
+    			<td class="blue"><p class="poids">20,1797(6)</p><h1>Ne</h1><p class="num">10</p></td>
+    		</tr>
+    		<tr id="ligne3">
+    			<td class="red"><p class="poids">22,98976928</p><h1>Na</h1><p class="num">11</p></td>
+    			<td class="beige"><p class="poids">24,3055</p><h1>Mg</h1><p class="num">12</p></td>
+    			<td colspan="10" class="void"></td>
+    			<td class="grey"><p class="poids">26,9815385</p><h1>Al</h1><p class="num">13</p></td>
+    			<td class="metal"><p class="poids">28,085(1)</p><h1>Si</h1><p class="num">14</p></td>
+    			<td class="green"><p class="poids">30,97376200</p><h1>P</h1><p class="num">15</p></td>
+    			<td class="green"><p class="poids">32,0675</p><h1>S</h1><p class="num">16</p></td>
+    			<td class="beige"><p class="poids">35,4515</p><h1>Cl</h1><p class="num">17</p></td>
+    			<td class="blue"><p class="poids">39,948(1)</p><h1>Ar</h1><p class="num">18</p></td>
+    		</tr>
+    		<tr id="ligne4">
+    			<td class="red"><p class="poids">39,0983(1)</p><h1>K</h1><p class="num">19</p></td>
+    			<td class="beige"><p class="poids">40,078(4)</p><h1>Ca</h1><p class="num">20</p></td>
+    			<td class="pink"><p class="poids">44,955908(5)</p><h1>Sc</h1><p class="num">21</p></td>
+    			<td class="pink"><p class="poids">47,867(1)</p><h1>Ti</h1><p class="num">22</p></td>
+    			<td class="pink"><p class="poids">50,9415(1)</p><h1>V</h1><p class="num">23</p></td>
+    			<td class="pink"><p class="poids">51,9961(6)</p><h1>Cr</h1><p class="num">24</p></td>
+    			<td class="pink"><p class="poids">54,938044</p><h1>Mn</h1><p class="num">25</p></td>
+    			<td class="pink"><p class="poids">55,845(2)</p><h1>Fe</h1><p class="num">26</p></td>
+    			<td class="pink"><p class="poids">58,933194</p><h1>Co</h1><p class="num">27</p></td>
+    			<td class="pink"><p class="poids">58,6934(4)</p><h1>Ni</h1><p class="num">28</p></td>
+    			<td class="pink"><p class="poids">63,546(3)</p><h1>Cu</h1><p class="num">29</p></td>
+    			<td class="grey"><p class="poids">65,38(2)</p><h1>Zn</h1><p class="num">30</p></td>
+    			<td class="grey"><p class="poids">69,723(1)</p><h1>Ga</h1><p class="num">31</p></td>
+    			<td class="metal"><p class="poids">72,630(8)</p><h1>Ge</h1><p class="num">32</p></td>
+    			<td class="metal"><p class="poids">74,921595</p><h1>As</h1><p class="num">33</p></td>
+    			<td class="green"><p class="poids">78,971(8)</p><h1>Se</h1><p class="num">34</p></td>
+    			<td class="beige"><p class="poids">79,904(3)</p><h1>Br</h1><p class="num">35</p></td>
+    			<td class="blue"><p class="poids">83,798(2)</p><h1>Kr</h1><p class="num">36</p></td>
+    		</tr>
+    		<tr id="ligne5">
+    			<td class="red"><p class="poids">85,4678</p><h1>Rb</h1><p class="num">37</p></td>
+    			<td class="beige"><p class="poids">87,62</p><h1>Sr</h1><p class="num">38</p></td>
+    			<td class="pink"><p class="poids">88,90584</p><h1>Y</h1><p class="num">39</p></td>
+    			<td class="pink"><p class="poids">91,224</p><h1>Zr</h1><p class="num">40</p></td>
+    			<td class="pink"><p class="poids">92,90637</p><h1>Nb</h1><p class="num">41</p></td>
+    			<td class="pink"><p class="poids">95,95</p><h1>Mo</h1><p class="num">42</p></td>
+    			<td class="pink"><p class="poids">[98]</p><h1>Tc</h1><p class="num">43</p></td>
+    			<td class="pink"><p class="poids">101,07</p><h1>Ru</h1><p class="num">44</p></td>
+    			<td class="pink"><p class="poids">102,90550</p><h1>Rh</h1><p class="num">45</p></td>
+    			<td class="pink"><p class="poids">106,42</p><h1>Pd</h1><p class="num">46</p></td>
+    			<td class="pink"><p class="poids">107,8682</p><h1>Ag</h1><p class="num">47</p></td>
+    			<td class="grey"><p class="poids">112,414</p><h1>Cd</h1><p class="num">48</p></td>
+    			<td class="grey"><p class="poids">114,818</p><h1>In</h1><p class="num">49</p></td>
+    			<td class="grey"><p class="poids">118,710</p><h1>Sn</h1><p class="num">50</p></td>
+    			<td class="metal"><p class="poids">121,760</p><h1>Sb</h1><p class="num">51</p></td>
+    			<td class="metal"><p class="poids">127,60</p><h1>Te</h1><p class="num">52</p></td>
+    			<td class="beige"><p class="poids">126,90447</p><h1>I</h1><p class="num">53</p></td>
+    			<td class="blue"><p class="poids">131,293</p><h1>Xe</h1><p class="num">54</p></td>
+    		</tr>
+    		<tr id="ligne6">
+    			<td class="red"><p class="poids">132,905452</p><h1>Cs</h1><p class="num">55</p></td>
+    			<td class="beige"><p class="poids">137,327</p><h1>Ba</h1><p class="num">56</p></td>
+    			<td class="purple"><br /><p>Lanthanides</p><p class="num">57-71</p></td>
+    			<td class="pink"><p class="poids">178,49</p><h1>Hf</h1><p class="num">72</p></td>
+    			<td class="pink"><p class="poids">180,94788</p><h1>Ta</h1><p class="num">73</p></td>
+    			<td class="pink"><p class="poids">183,84</p><h1>W</h1><p class="num">74</p></td>
+    			<td class="pink"><p class="poids">186,207</p><h1>Re</h1><p class="num">75</p></td>
+    			<td class="pink"><p class="poids">190,23</p><h1>Os</h1><p class="num">76</p></td>
+    			<td class="pink"><p class="poids">192,217</p><h1>Ir</h1><p class="num">77</p></td>
+    			<td class="pink"><p class="poids">195,084</p><h1>Pt</h1><p class="num">78</p></td>
+    			<td class="pink"><p class="poids">196,966569</p><h1>Au</h1><p class="num">79</p></td>
+    			<td class="grey"><p class="poids">200,592</p><h1>Hg</h1><p class="num">80</p></td>
+    			<td class="grey"><p class="poids">204,3835</p><h1>Tl</h1><p class="num">81</p></td>
+    			<td class="grey"><p class="poids">207,2</p><h1>Pb</h1><p class="num">82</p></td>
+    			<td class="grey"><p class="poids">208,98040</p><h1>Bi</h1><p class="num">83</p></td>
+    			<td class="grey"><p class="poids">[209]</p><h1>Po</h1><p class="num">84</p></td>
+    			<td class="metal"><p class="poids">[210]</p><h1>At</h1><p class="num">85</p></td>
+    			<td class="blue"><p class="poids">[222]</p><h1>Rn</h1><p class="num">86</p></td>
+    		</tr>
+    		<tr id="ligne7">
+    			<td class="red"><p class="poids">[223]</p><h1>Fr</h1><p class="num">87</p></td>
+    			<td class="beige"><p class="poids">[226]</p><h1>Ra</h1><p class="num">88</p></td>
+    			<td class="red2"><br /><p>Actinides</p><p class="num">89-103</p></td>
+    			<td class="pink"><p class="poids">[267]</p><h1>Rf</h1><p class="num">104</p></td>
+    			<td class="pink"><p class="poids">[268]</p><h1>Db</h1><p class="num">105</p></td>
+    			<td class="pink"><p class="poids">[269]</p><h1>Sg</h1><p class="num">106</p></td>
+    			<td class="pink"><p class="poids">[270]</p><h1>Bh</h1><p class="num">107</p></td>
+    			<td class="pink"><p class="poids">[277]</p><h1>Hs</h1><p class="num">108</p></td>
+    			<td class="grey"><p class="poids">[278]</p><h1>Mt</h1><p class="num">109</p></td>
+    			<td class="grey"><p class="poids">[281]</p><h1>Ds</h1><p class="num">110</p></td>
+    			<td class="grey"><p class="poids">[282]</p><h1>Rg</h1><p class="num">111</p></td>
+    			<td class="pink"><p class="poids">[285]</p><h1>Cn</h1><p class="num">112</p></td>
+    			<td class="grey"><p class="poids">[286]</p><h1>Nh</h1><p class="num">113</p></td>
+    			<td class="grey"><p class="poids">[289]</p><h1>Fl</h1><p class="num">114</p></td>
+    			<td class="grey"><p class="poids">[289]</p><h1>Mc</h1><p class="num">115</p></td>
+    			<td class="grey"><p class="poids">[293]</p><h1>Lv</h1><p class="num">116</p></td>
+    			<td class="grey"><p class="poids">[294]</p><h1>Ts</h1><p class="num">117</p></td>
+    			<td class="grey"><p class="poids">[294]</p><h1>Og</h1><p class="num">118</p></td>
+    		</tr>
+    	</table>
+    	<br />
+    	<table>
+    		<tr>
+    			<td class="purple"><p class="poids">138,90547</p><h1>La</h1><p class="num">57</p></td>
+    			<td class="purple"><p class="poids">140,116</p><h1>Ce</h1><p class="num">58</p></td>
+    			<td class="purple"><p class="poids">140,90766</p><h1>Pr</h1><p class="num">59</p></td>
+    			<td class="purple"><p class="poids">144,242</p><h1>Nd</h1><p class="num">60</p></td>
+    			<td class="purple"><p class="poids">[145]</p><h1>Pm</h1><p class="num">61</p></td>
+    			<td class="purple"><p class="poids">150,36</p><h1>Sm</h1><p class="num">62</p></td>
+    			<td class="purple"><p class="poids">151,964</p><h1>Eu</h1><p class="num">63</p></td>
+    			<td class="purple"><p class="poids">157,25</p><h1>Gd</h1><p class="num">64</p></td>
+    			<td class="purple"><p class="poids">158,92535</p><h1>Tb</h1><p class="num">65</p></td>
+    			<td class="purple"><p class="poids">162,500</p><h1>Dy</h1><p class="num">66</p></td>
+    			<td class="purple"><p class="poids">164,93033</p><h1>Ho</h1><p class="num">67</p></td>
+    			<td class="purple"><p class="poids">167,259</p><h1>Er</h1><p class="num">68</p></td>
+    			<td class="purple"><p class="poids">168,93422</p><h1>Tm</h1><p class="num">69</p></td>
+    			<td class="purple"><p class="poids">173,045</p><h1>Yb</h1><p class="num">70</p></td>
+    			<td class="purple"><p class="poids">174,9668</p><h1>Lu</h1><p class="num">71</p></td>
+    		</tr>
+    		<tr>
+    			<td class="red2"><p class="poids">[227]</p><h1>Ac</h1><p class="num">89</p></td>
+    			<td class="red2"><p class="poids">232,0377</p><h1>Th</h1><p class="num">90</p></td>
+    			<td class="red2"><p class="poids">231,03588</p><h1>Pa</h1><p class="num">91</p></td>
+    			<td class="red2"><p class="poids">238,02891</p><h1>U</h1><p class="num">92</p></td>
+    			<td class="red2"><p class="poids">[237]</p><h1>Np</h1><p class="num">93</p></td>
+    			<td class="red2"><p class="poids">[244]</p><h1>Pu</h1><p class="num">94</p></td>
+    			<td class="red2"><p class="poids">[246]</p><h1>Am</h1><p class="num">95</p></td>
+    			<td class="red2"><p class="poids">[247]</p><h1>Cm</h1><p class="num">96</p></td>
+    			<td class="red2"><p class="poids">[247]</p><h1>Bk</h1><p class="num">97</p></td>
+    			<td class="red2"><p class="poids">[251]</p><h1>Cf</h1><p class="num">98</p></td>
+    			<td class="red2"><p class="poids">[252]</p><h1>Es</h1><p class="num">99</p></td>
+    			<td class="red2"><p class="poids">[257]</p><h1>Fm</h1><p class="num">100</p></td>
+    			<td class="red2"><p class="poids">[258]</p><h1>Md</h1><p class="num">101</p></td>
+    			<td class="red2"><p class="poids">[259]</p><h1>No</h1><p class="num">102</p></td>
+    			<td class="red2"><p class="poids">[266]</p><h1>Lr</h1><p class="num">103</p></td>
+    		</tr>
+    	</table>
+    </body>
+</html>

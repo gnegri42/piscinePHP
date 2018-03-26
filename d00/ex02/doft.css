@@ -1,0 +1,196 @@
+body
+{
+	background-color: #505050;
+	/*width: 1420px;*/
+}
+/********** HEADER ************/
+header
+{
+	position: relative;
+	background-color: #909090;
+	margin-left: 230px;
+	margin-top: 10px;
+	box-shadow: 10px 10px 10px rgb(0, 0, 0);
+	border-radius: 10px;
+	height: 117px;
+	padding: 10px;
+	display: flex;
+	width: 1400px;
+}
+#banniere
+{
+	width: 400px;
+}
+#loupe
+{
+	position: absolute;
+	width: 235px;
+	left: 1150px;
+	top: 20px;
+}
+#close
+{
+	position: absolute;
+	top: 110px;
+	left: 1390px;
+	height: 22px;
+}
+#reload
+{
+	position: absolute;
+	left: 1390px;
+	height: 22px;
+}
+
+/************* MAIN *********/
+#main
+{
+	width: 1420px;
+	display: flex;
+	margin-left: 230px;
+}
+/************* NAV **********/
+nav
+{
+	width: 140px;
+	height: 425px;
+	position: relative;
+	background-color: #909090;
+	margin: 30px;
+	margin-top: 20px;
+	box-shadow: 10px 10px 10px rgb(0, 0, 0);
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+nav a img
+{
+	position: relative;
+	width: 70px;
+}
+nav a
+{
+	margin: auto;
+}
+
+#oeil
+{
+	border-style: solid;
+	border-radius: 10px;
+	border-color: red;
+	border-width: 5px;
+}
+
+/******** IMAGE *********/
+#image
+{
+	position: relative;
+	background-color: #909090;
+	margin-top: 20px;
+	box-shadow: 10px 10px 10px rgb(0, 0, 0);
+	border-radius: 10px;
+	width: 1020px;
+}
+
+#image img
+{
+	padding: 10px;
+	width: 1000px;;
+}
+
+/*********** OBJECTS ********/
+#objects
+{
+	width: 140px;
+	height: 425px;
+	position: relative;
+	background-color: #909090;
+	margin: 30px;
+	margin-top: 20px;
+	box-shadow: 10px 10px 10px rgb(0, 0, 0);
+	border-radius: 10px;
+	/*display: flex;
+	flex-direction: column;*/
+}
+
+#objects img
+{
+	position: relative;
+	width: 70px;
+	margin: auto;
+	margin-left: 38px;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#mur a
+{
+	width: 120px;
+	height: 70px;
+	position: absolute;
+	margin: auto;
+	margin-left: 10px;
+	margin-top: 10px;
+	text-align: center;
+	background-image: url(resources/brick.jpg);
+}
+
+/************* TEXTE *************/
+#texte
+{
+	position: relative;
+	background-color: #88ff89;
+	box-shadow: 10px 10px 10px rgb(0, 0, 0);
+	border-radius: 10px;
+	width: 500px;
+	height: 150px;
+	margin-left: 185px;
+	top: -80px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#texte p
+{
+	font-size: 1em;
+	margin-left: 10px;
+	margin-bottom: 0px;
+}
+
+#texte strong
+{
+	font-size: 2em;
+}
+
+#texte em
+{
+	margin-top: 0px;
+	text-shadow: 5px 5px 5px #ff0000;
+}
+
+.italic
+{
+	margin-top: 0px;
+	font-style: italic;
+}
+
+.button
+{
+	height: 25px;
+	margin-top: 0px;
+	margin-left: 5px;
+	border-radius: 3px;
+	border-color: #a8a4a5;
+	background-color: #ededed;
+}
+
+#rectangle
+{
+	margin-top: 0px;
+	padding-top: 0px;
+	background-color: white;
+	width: 380px;
+	height: 20px;
+	margin-left: 10px;
+	margin-bottom: 50px;
+}

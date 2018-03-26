@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Day of the 42</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+		<link rel="stylesheet" href="doft.css" />
+	</head>
+	<body>
+		<header>
+			<img id="banniere" src="resources/day_of_the_42.png" alt="banniere">
+			<img id="loupe" src="resources/loupe.png" alt="loupe">
+			<a href="https://www.relaischateaux.com" title="Déconnecter"><img id="close" src="resources/close.gif" alt="close"></a>
+			<a href="http://www.disney.com" title="Recommencer au début"><img id="reload" src="resources/reload.png" alt="reload"></a>
+		</header>
+		<section id="main">
+			<nav>
+				<a href="#" title="Avancer"><img src="resources/arrow.png" alt="Avancer"></a>
+				<a href="#" title="Prendre"><img src="resources/main.png" alt="Prendre"></a>
+				<a href="#" title="Regarder"><img src="resources/oeil.png" id="oeil" alt="Regarder"></a>
+				<a href="#" title="Utiliser"><img src="resources/outil.png" alt="Utiliser"></a>
+				<a href="#" title="Parler"><img src="resources/chat-icon.png" alt="Parler"></a>
+			</nav>
+			<section id="image">
+				<img id="cluster" src="resources/cluster.jpg" alt="cluster" usemap="#clustermap">
+				<map name="clustermap">
+					<area shape="rect" coords="330,320,450,550" href="http://www.ikea.com" title="ikea">
+					<area shape="rect" coords="800,300,1000,500" href="http://www.apple.com" title="apple">
+				</map>
+			</section>
+			<section id="objects">
+				<a href="#" title="Lire"><img src="resources/book.png" alt="livre"></a>
+				<a href="#" title="Se sécher"><img src="resources/towel.png" alt="serviette"></a>
+				<div id="mur"><a href="#" title="Stop!"></a></div>
+			</section>
+		</section>
+		<div id="texte">
+			<p>Vous <strong>entrez</strong> alors dans une grande piece remplie d'<em>ordinateurs</em>...</p>
+			<p class="italic">- Bonjour, vous êtes nouveau ici ?</p>
+			<input type="text" id="rectangle"/><input class="button" type="submit" value="Repondre" />
+		</div>
+	</body>
+</html>
