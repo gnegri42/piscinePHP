@@ -19,7 +19,8 @@ while ($input)
 		$num = str_replace("\n", "", "$num");
 	if (is_numeric($num))
 	{
-		if (is_even($num) == 1)
+		$str = substr($num, -1);
+		if (is_even($str) == 1)
 			echo "Le chiffre " . $num . " est Pair\n";
 		else
 			echo "Le chiffre " . $num . " est Impair\n";
