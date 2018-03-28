@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
 
-if ($argc > 0)
+if ($argc > 1)
 {
 	$array = array();
 	unset($argv[0]);
@@ -14,8 +14,6 @@ if ($argc > 0)
 	{
 		$str .= $elem." ";
 	}
-	trim($str);
-	echo "$str\n";
+	echo trim($str) . "\n";
 }
-
 ?>

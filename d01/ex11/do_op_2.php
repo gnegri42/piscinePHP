@@ -34,7 +34,7 @@ if ($argc == 2)
 		}
 		$i++;
 	}
-	if ($tab != NULL)
+	if ($tab != NULL && $tab[1] != NULL)
 	{
 		foreach ($tab as $elem)
 		{

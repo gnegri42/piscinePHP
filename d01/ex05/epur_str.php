@@ -7,7 +7,6 @@ if ($argc == 2)
 	{
 		$str .= $elem." ";
 	}
-	trim($str);
-	echo "$str\n";
+	echo trim($str) . "\n";
 }
 ?>
