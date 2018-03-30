@@ -13,6 +13,6 @@ else
 {
 	header("HTTP/1.0 200 OK");
 	$img = file_get_contents("../img/42.png");
-	echo "<html><body>\nBonjour Zaz<br />\n<img src='data:image/png;base64,".base64_encode($img)."'>\n</body></html>\n";
+	echo ("<html><body>\nBonjour Zaz<br />\n<img src='data:image/png;base64,".base64_encode($img)."'>\n</body></html>\n";
 }
 ?>
