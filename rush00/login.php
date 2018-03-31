@@ -21,7 +21,7 @@ function auth($login, $passwd)
 	return (FALSE);
 }
 
-if ($_POST["login"] !== "" && $_POST["passwd"] !== "" && $_POST["submit"] === "OK")
+if (!empty($_POST["login"]) && !empty($_POST["passwd"]) && $_POST["submit"] === "OK")
 {
 	if (auth($_POST["login"], hash("whirlpool", $_POST["passwd"])))
 	{

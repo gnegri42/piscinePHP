@@ -23,7 +23,8 @@
 					<LI><a href="categories.php">Vestes</a></LI>
 				</UL>
 			</LI>
-			<?php if ($_SESSION["logged_on_user"] === NULL)
+			<?php 
+			if (empty($_SESSION["logged_on_user"]))
 				echo "<LI>MON COMPTE</a>";
 			else
 				echo "<li>". $_SESSION["logged_on_user"]. "</a>";

@@ -1,4 +1,16 @@
 <?php
+
+function connect_db()
+{
+	$conn = mysqli_connect("localhost", "root", "admin1");
+	if (!$conn) 
+	{
+		die("Connection failed: " . mysqli_connect_error());
+		return (NULL);
+	}
+	return $conn;
+}
+
 function query_db($query)
 {
 	$conn = mysqli_connect("localhost", "root", "admin1");

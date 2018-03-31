@@ -1,5 +1,6 @@
 <?PHP
 	session_start();
+	include("base/cats.php");
 ?>
 <HTML>
 
@@ -8,6 +9,9 @@
 	<BODY>
 
 		<p> Page d'accueil</p>
+		<?php 
+		cat_get_all(); 
+		?>
 
 
 	</BODY>
