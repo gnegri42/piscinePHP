@@ -1,0 +1,49 @@
+HEADER
+{
+  padding-top: 0px;
+  font-size: 25px;
+  font-family: cursive;
+  background-color: #FFFFFF;
+}
+NAV > UL > LI
+{
+  font-weight: bold;
+  display: inline-block;
+  position: relative;
+  padding: 10px 30px;
+  background: #FFFFFF;
+}
+UL LI:hover 
+{
+  background: grey;
+  border-radius: 5px;
+  color: #FFFFFF;
+}
+UL LI UL
+{
+  padding:0;
+  position: absolute;
+  top: 51px;
+  left: 0;
+  visibility: hidden;
+}
+
+UL LI UL LI 
+{ 
+  background: #FFD24D; 
+  display: block; 
+  color: #FFFFFF;
+}
+
+UL LI UL LI:hover 
+{
+  background: #CC7A00;
+  text-decoration: none;
+  border-radius: 0px;
+}
+UL LI:hover UL 
+{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+};
