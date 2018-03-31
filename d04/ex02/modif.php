@@ -12,6 +12,7 @@ if ($_POST["login"] !== "" && $_POST["oldpw"] !== "" && $_POST["newpw"] !== "" &
 				$tab[$elem]["passwd"] = hash("whirlpool", $_POST["newpw"]);
 				file_put_contents($file, serialize($tab));
 				echo "OK\n";
+				exit();
 			}
 		}
 	}
