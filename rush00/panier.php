@@ -26,7 +26,7 @@
 		}
 		if (isset($_SESSION["produits"]) && $_SESSION["produits"] != NULL)
 		{
-        	$req = "INSERT INTO cart (user_id, total) VALUES ($user_id, $total_cart)";
+        	$req = "INSERT INTO cart (user_id, price) VALUES ($user_id, $total_cart)";
 			$result = mysqli_query($conn, $req);
     		foreach($_SESSION["produits"] as $prod)
     		{
@@ -46,7 +46,7 @@
 	<BODY>
 		<div id="wrapping">
 
-		<H1>MON PANIER</h1>
+		<h1>MON PANIER</h1>
 		<a href="empty.php" title="Empty cart">Vider le panier</a><br />
 		<TABLE class="panier" >
 

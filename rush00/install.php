@@ -80,7 +80,7 @@
 			$create_cart = "CREATE TABLE cart (
 			id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
 			user_id INT(6) UNSIGNED NOT NULL,
-			price INT(6) UNSIGNED NOT NULL,
+			price INT(6) UNSIGNED NOT NULL
 			)";
 			if (mysqli_query($conn, $create_cart))
 				echo "Cart : OK <br />";

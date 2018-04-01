@@ -14,7 +14,8 @@ if (isset($_POST['submit']) && $_POST["submit"] === "Oui!")
 <!DOCTYPE html>
 <html>
 	<body>
-		<h1>Suppriession du compte!!</h1>
+		<div id="wrapping">
+		<h1>Suppression du compte!!</h1>
 		<?php if ($_SESSION["logged_on_user"] === NULL)
 				echo "Vous n'êtes pas connecté, vous ne pouvez pas supprimer de compte!";
 			else
@@ -22,5 +23,6 @@ if (isset($_POST['submit']) && $_POST["submit"] === "Oui!")
 			Voulez-vous vraiment supprimer votre compte?
 			<input type="submit" name="submit" value="Oui!" />
 		</form> ';?>
+		</div>
 	</body>
 </html>

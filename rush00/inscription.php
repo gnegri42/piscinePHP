@@ -124,7 +124,7 @@ else
 	<!DOCTYPE html>
 	<html>
 		<body>
-		<div id=wrapping">
+		<div id="wrapping">
 			<h1>Vous êtes déjà inscrits !</h1>
 			<a href="index.php" title="accueil">Retour à la page d'accueil</a><br />
 		</div>

@@ -37,13 +37,11 @@ TD
 	background-color: green;
     border: none;
     color: white;
-    padding: 10px 10px;
     text-decoration: none;
     border-radius: 12px;
     margin: auto;
     cursor: pointer;
     min-height: 50px;
-    min-width: 250px;
 }
 #button:hover
 {
