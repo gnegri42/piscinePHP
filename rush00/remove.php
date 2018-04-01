@@ -2,7 +2,7 @@
 session_start();
 include ("header.php");
 include ("query_db.php");
-if ($_POST["submit"] === "Oui!")
+if (isset($_POST['submit']) && $_POST["submit"] === "Oui!")
 {
 	$login = $_SESSION["logged_on_user"];
 	query_db("DELETE FROM users WHERE login = '$login'");

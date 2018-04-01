@@ -1,0 +1,56 @@
+H1
+{
+	text-align: center;
+	margin-top: 10%;
+}
+TABLE
+{
+	display: block;
+	margin: auto;
+	border: medium solid #6495FF;
+	border-radius: 5px;
+	border-collapse: collapse;
+	width: 90%;
+}
+TH 
+{
+	font-family: monospace;
+	font-size: 2em;
+	border: thin solid #6495FF;
+	width: 40%;
+	padding: 25px;
+	background-color: #D0E3FA;
+	border-radius: 5px;
+}
+TD 
+{
+	font-family: sans-serif;
+	border: thin solid #6495FF;
+	width: 40%;
+	padding: 10px;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+#button
+{
+	display: block;
+	background-color: green;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+    border-radius: 12px;
+    margin: auto;
+    cursor: pointer;
+    min-height: 50px;
+    min-width: 250px;
+}
+#button:hover
+{
+ 	background-color: #33FF77;
+}
+
+#button:active
+{
+	background-color:green;
+}

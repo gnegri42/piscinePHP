@@ -2,21 +2,35 @@ HEADER
 {
   padding-top: 0px;
   font-size: 25px;
-  font-family: cursive;
+  font-family: 'Roboto', sans-serif;
   background-color: #FFFFFF;
+}
+NAV
+{
+  width: 100%;
+  background-color: white;
+  display: inline-block;
+}
+NAV > UL
+{
+  margin: 0;
 }
 NAV > UL > LI
 {
-  font-weight: bold;
+  font-weight: normal;
+  padding: 15px 20px;
   display: inline-block;
   position: relative;
-  padding: 10px 30px;
   background: #FFFFFF;
+}
+NAV > UL > LI > A
+{
+  text-decoration: none;
+  color: black;
 }
 UL LI:hover 
 {
   background: grey;
-  border-radius: 5px;
   color: #FFFFFF;
 }
 UL LI UL
@@ -26,24 +40,42 @@ UL LI UL
   top: 51px;
   left: 0;
   visibility: hidden;
+  z-index: 10000;
 }
 
 UL LI UL LI 
-{ 
+{
   background: #FFD24D; 
   display: block; 
   color: #FFFFFF;
+  padding: 10px;
 }
-
+UL LI UL LI A
+{
+  text-decoration: none;
+}
 UL LI UL LI:hover 
 {
   background: #CC7A00;
   text-decoration: none;
   border-radius: 0px;
+  z-index: 10000;
 }
 UL LI:hover UL 
 {
   display: block;
   opacity: 1;
   visibility: visible;
-};
+  z-index: 10000;
+}
+#copyright
+{
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding-top: 15px; 
+  padding-bottom: 15px; 
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
